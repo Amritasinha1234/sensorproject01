@@ -29,10 +29,10 @@ class TrainingPipeline:
         
         
         
-    def start_model_training(self,train_arr,test_arr):
+    def start_model_training(self, train_arr,test_arr):
         try:
             
-            model_trainer=ModelTrainer
+            model_trainer=ModelTrainer()
             model_score=model_trainer.initiate_model_trainer(
                 train_arr,test_arr
             )   
