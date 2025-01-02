@@ -81,7 +81,7 @@ jobs:
       
       - name: Pull latest images
         run: |
-         docker pull ${{ secrets.AWS_ECR_REPO_URI }}:latest
+         docker pull 140023397212.dkr.ecr.us-west-2.amazonaws.com/deployment:latest
          
                 
       # - name: Stop and remove visibility container if running
