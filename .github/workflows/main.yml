@@ -56,8 +56,8 @@ jobs:
           # Build a docker container and
           # push it to ECR so that it can
           # be deployed to ECS.
-          docker build -t ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG .
-          docker push ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG
+          docker buildx build -t 140023397212.dkr.ecr.us-west-2.amazonaws.com/deployment:$IMAGE_TAG . --push
+          
           
           
   Continuous-Deployment:
